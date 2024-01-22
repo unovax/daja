@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+svg {
+    @apply w-5 h-5;
+}
+
+.icon__pointer {
+    @apply hover:scale-125 cursor-pointer;
+}
+
+hr{
+    @apply border-gray-700;
+}
+
+table {
+    @apply w-full border-collapse my-2;
+}
+
+thead tr {
+    @apply bg-black rounded border border-gray-700;
+}
+
+tbody tr {
+    @apply odd:bg-gray-800 even:bg-gray-700 rounded;
+}
+
+th, td {
+    @apply px-2 py-1;
+}
