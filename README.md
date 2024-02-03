@@ -8,68 +8,44 @@
 
 <ol>
   <li>Clone the repository to your local machine:</li>
-    <div class="code">
-      <strong>git clone https://github.com/your-username/daja.git</strong>
-    </div>
+  <br>
+  <strong>git clone https://github.com/your-username/daja.git</strong>
   <li>Navigate to the project directory:</li>
-    <div class="code">
-      <strong>cd daja</strong>
-    </div>
+  <br>
+  <strong>cd daja</strong>
   <li>Install PHP dependencies using Composer:</li>
-  <div class="code">
-    <strong> composer install</strong>
-  </div>
+ <br>
+ <strong> composer install</strong>
   <li>Install JavaScript dependencies using npm:</li>
-    <div class="code">
-      <strong>npm install</strong>
-    </div>
+  <br>
+  <strong>npm install</strong>
   <li>Copy the example environment file and update it with your configuration:</li>
-    <div class="code">
-      <strong>cp .env.example .env</strong>
-    </div>
+  <br>
+  <strong>cp .env.example .env</strong>
   Update the necessary information in the .env file, such as the database connection details.
 
   <li>Generate the application key:</li>
-    <div class="code">
-      <strong>php artisan key:generate</strong>
-    </div>
+  <br>
+  <strong>php artisan key:generate</strong>
   <li>Create a symbolic link to the storage directory:</li>
-  <div class="code">
-    <strong> php artisan storage:link</strong>
-  </div>
+ <br>
+ <strong> php artisan storage:link</strong>
   <li>Run the database migrations:</li>
-    <div class="code">
-      <strong>php artisan migrate</strong>
-    </div>
+  <br>
+  <strong>php artisan migrate</strong>
 </ol>
 <h2 align="center">Running the Development Server</h2>
 <p>Once the installation is complete, start the development server with the following commands:</p>
 <ol>
   <li>Compile and watch assets for changes:</li>
-    <div class="code">
-      <strong>npm run dev</strong>
-    </div>
+  <br>
+  <strong>npm run dev</strong>
   <li>Start the Laravel development server:</li>
-  <div class="code">
-    <strong> php artisan serve</strong>
-  </div>
+ <br>
+ <strong> php artisan serve</strong>
 </ol>
 <p>Visit <a href="http://localhost:8000">http://localhost:8000</a> in your web browser to access the Daja application.</p>
 <h2 align="center">Contributing</h2>
 <p>Feel free to contribute to the development of Daja by opening issues or submitting pull requests. We welcome your feedback and collaboration.</p>
 <h2 align="center">License</h2>
 <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
-
-<style>
-  .code {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  .code strong {
-    color: #000;
-  }
-  .code a {
-    color: #000;
-  }
-</style>
