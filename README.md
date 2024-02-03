@@ -8,41 +8,41 @@
 
 <ol>
   <li>Clone the repository to your local machine:</li>
-  <br>
   <strong>git clone https://github.com/your-username/daja.git</strong>
+  <br>
   <li>Navigate to the project directory:</li>
-  <br>
   <strong>cd daja</strong>
+  <br>
   <li>Install PHP dependencies using Composer:</li>
- <br>
- <strong> composer install</strong>
+  <strong> composer install</strong>
+  <br>
   <li>Install JavaScript dependencies using npm:</li>
-  <br>
   <strong>npm install</strong>
-  <li>Copy the example environment file and update it with your configuration:</li>
   <br>
+  <li>Copy the example environment file and update it with your configuration:</li>
   <strong>cp .env.example .env</strong>
+  <br>
   Update the necessary information in the .env file, such as the database connection details.
 
   <li>Generate the application key:</li>
-  <br>
   <strong>php artisan key:generate</strong>
-  <li>Create a symbolic link to the storage directory:</li>
- <br>
- <strong> php artisan storage:link</strong>
-  <li>Run the database migrations:</li>
   <br>
+  <li>Create a symbolic link to the storage directory:</li>
+  <strong> php artisan storage:link</strong>
+  <br>
+  <li>Run the database migrations:</li>
   <strong>php artisan migrate</strong>
+  <br>
 </ol>
 <h2 align="center">Running the Development Server</h2>
 <p>Once the installation is complete, start the development server with the following commands:</p>
 <ol>
   <li>Compile and watch assets for changes:</li>
-  <br>
   <strong>npm run dev</strong>
+  <br>
   <li>Start the Laravel development server:</li>
- <br>
- <strong> php artisan serve</strong>
+  <strong> php artisan serve</strong>
+  <br>
 </ol>
 <p>Visit <a href="http://localhost:8000">http://localhost:8000</a> in your web browser to access the Daja application.</p>
 <h2 align="center">Contributing</h2>
