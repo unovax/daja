@@ -18,13 +18,16 @@
         @livewireStyles
     </head>
     <body
-        x-data="{ sidebar: false }"
-        class="bg-gray-300 dark:bg-gray-900 text-black dark:text-gray-300 overflow-auto">
+        x-data="{
+            sidebar: false
+        }"
+        class="bg-gray-300 dark:bg-gray-900 text-black dark:text-gray-300 overflow-auto flex">
         @livewire('navigation-component')
         <main
-            class="h-full w-full flex flex-col">
+            class="h-screen w-full flex flex-col">
             <x-top-bar-component/>
             {{ $slot }}
+            @livewire('notification-component')
         </main>
         @stack('modals')
         @livewireScripts

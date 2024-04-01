@@ -17,10 +17,12 @@
             <h1 class="text-3xl">{{ env('APP_NAME') }}</h1>
             <x-icons.menu x-on:click="sidebar = false" class="w-6 h-6 icon__pointer"/>
         </section>
-        <hr>
-        <ul>
+        <ul class="flex flex-col items-center gap-y-1">
             @foreach ($links as $link)
-                <x-link-component name="{{ $link['name'] }}" icon="{{ $link['icon'] }}" href="{{ $link['href'] }}" />
+                <h2 class="py-2 border-b border-gray-700 w-[95%]">{{ $link['name'] }}</h2>
+                @foreach ($link['submenu'] as $l)
+                    <x-link-component name="{{ $l['name'] }}" icon="{{ $l['icon'] }}" href="{{ $l['href'] }}" />
+                @endforeach
             @endforeach
         </ul>
     </nav>
